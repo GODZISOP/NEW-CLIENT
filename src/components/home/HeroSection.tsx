@@ -39,7 +39,6 @@ const HeroSection: React.FC = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
             variants={slideRightVariant}
           >
-            Singapore&apos;s Trusted<br />
             Website Design &<br />
             Digital Agency
           </motion.h1>
