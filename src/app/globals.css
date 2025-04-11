@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 98%; /* fbfafa */
+    --foreground: 190 7% 20%; /* 2f3536 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 190 7% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 190 7% 20%;
+
+    --primary: 28 69% 57%; /* da894a */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 15 49% 44%; /* a9573c */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 1% 62%; /* 9a9c9d */
+    --muted-foreground: 220 1% 80%;
+
+    --accent: 17 46% 85%; /* e4d0ca */
+    --accent-foreground: 190 7% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 5% 80%; /* c8cacb */
+    --input: 200 5% 80%;
+    --ring: 28 69% 57%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 190 7% 20%;
+    --foreground: 0 0% 98%;
+
+    --card: 190 7% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 190 7% 20%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 28 69% 57%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 15 49% 44%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 1% 62%;
+    --muted-foreground: 220 1% 45%;
+
+    --accent: 17 46% 85%;
+    --accent-foreground: 190 7% 20%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 200 5% 80%;
+    --input: 200 5% 80%;
+    --ring: 28 69% 57%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-verz-bg text-verz-dark font-inter;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-roboto font-bold;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+/* Custom classes */
+@layer components {
+  .btn-primary {
+    @apply bg-verz-orange hover:bg-verz-rust text-white font-medium py-3 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-verz-dark hover:bg-verz-gray text-white font-medium py-3 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
