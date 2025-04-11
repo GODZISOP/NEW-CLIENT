@@ -10,13 +10,13 @@ import Footer from '@/components/layout/Footer';
 export default function Home() {
   return (
     <main className="min-h-screen">
+      <Footer />
       <Header />
       <HeroSection />
       <AboutSection />
       <ServicesSection />
       <CaseStudiesSection />
       <ClientsSection />
-      <Footer />
     </main>
   );
 }
