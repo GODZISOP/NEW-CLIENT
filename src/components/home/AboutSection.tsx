@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 
 const AboutSection = () => {
   const stats = [
-    { id: 1, value: '14+', label: 'Years of Success' },
+    { id: 1, value: '1+', label: 'Years of Success' },
     { id: 2, value: '5,000+', label: 'Websites Launched' },
     { id: 3, value: '$120M+', label: 'DTC ANNUAL GMV GENERATED' },
     { id: 4, value: '180+', label: 'Strong global team' },
