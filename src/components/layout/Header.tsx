@@ -26,12 +26,11 @@ const Header = () => {
 
   return (
     <header
-      className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-100 ease-in-out transform',
-        scrolled
-          ? 'bg-white/80 backdrop-blur-md shadow-md py-3 translate-y-0 opacity-100'
-          : 'bg-transparent py-6 translate-y-2 opacity-95'
-      )}
+    className={cn(
+      'fixed top-0 left-0 right-0 z-50 py-3 transition-all duration-100 ease-in-out transform',
+      scrolled ? 'bg-white/80 backdrop-blur-md shadow-md opacity-100' : 'bg-transparent py-6 opacity-95'
+    )}
+    
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo */}
